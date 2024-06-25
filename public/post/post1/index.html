@@ -41,10 +41,10 @@
   
     
   
-  <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum." />
+  <meta name="description" content="Create a personal knowledge base and share your knowledge with your peers." />
 
   
-  <link rel="alternate" hreflang="en-us" href="https://example.com/publication/journal-article/" />
+  <link rel="alternate" hreflang="en-us" href="https://example.com/post/post1/" />
 
   
   
@@ -161,7 +161,7 @@
   <link rel="icon" type="image/png" href="/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_32x32_fill_lanczos_center_3.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_180x180_fill_lanczos_center_3.png" />
 
-  <link rel="canonical" href="https://example.com/publication/journal-article/" />
+  <link rel="canonical" href="https://example.com/post/post1/" />
 
   
   
@@ -186,73 +186,28 @@
     <meta property="twitter:creator" content="@GetResearchDev" />
   
   <meta property="og:site_name" content="Hugo Academic CV Theme" />
-  <meta property="og:url" content="https://example.com/publication/journal-article/" />
-  <meta property="og:title" content="An example journal article | Hugo Academic CV Theme" />
-  <meta property="og:description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum." /><meta property="og:image" content="https://example.com/publication/journal-article/featured.jpg" />
-    <meta property="twitter:image" content="https://example.com/publication/journal-article/featured.jpg" /><meta property="og:locale" content="en-us" />
+  <meta property="og:url" content="https://example.com/post/post1/" />
+  <meta property="og:title" content="GIT 🧠 | Hugo Academic CV Theme" />
+  <meta property="og:description" content="Create a personal knowledge base and share your knowledge with your peers." /><meta property="og:image" content="https://example.com/post/post1/featured.jpg" />
+    <meta property="twitter:image" content="https://example.com/post/post1/featured.jpg" /><meta property="og:locale" content="en-us" />
   
     
       <meta
         property="article:published_time"
-        content="2017-01-01T00:00:00&#43;00:00"
+        content="2023-10-26T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2015-09-01T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2023-10-26T00:00:00&#43;00:00">
   
 
   
 
 
-    
-
-
-
-
-
-
-
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://example.com/publication/journal-article/"
-  },
-  "headline": "An example journal article",
-  
-  "image": [
-    "https://example.com/publication/journal-article/featured.jpg"
-  ],
-  
-  "datePublished": "2017-01-01T00:00:00Z",
-  "dateModified": "2015-09-01T00:00:00Z",
-  
-  "author": {
-    "@type": "Person",
-    "name": "Булытова Мария"
-  },
-  
-  "publisher": {
-    "@type": "Organization",
-    "name": "Hugo Academic CV Theme",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://example.com/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_192x192_fill_lanczos_center_3.png"
-    }
-  },
-  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum."
-}
-</script>
-
-  
 
   
 
 
-  <title>An example journal article | Hugo Academic CV Theme</title>
+  <title>GIT 🧠 | Hugo Academic CV Theme</title>
 
   
   
@@ -614,6 +569,28 @@
 
 
 
+<style>
+  .markmap > svg {
+    width: 100%;
+    height: 100%;
+  }
+</style>
+<script>
+  window.markmap = {
+    autoLoader: {
+      manual: false,
+      onReady() {
+        const { autoLoader, builtInPlugins } = window.markmap;
+        
+        autoLoader.transformPlugins = builtInPlugins.filter(plugin => plugin.name !== 'prism');
+      },
+    },
+  };
+</script>
+
+
+<script defer src="/dist/lib/markmap/index.min.c9d7aae44c6040009be2304689eae39673e6614f1a92d8f4a69f581bed004b9b.js" integrity="sha256-ydeq5ExgQACb4jBGierjlnPmYU8aktj0pp9YG&#43;0AS5s="></script>
+
 
 
 
@@ -865,11 +842,6 @@
 
 
 
-  
-    
-    
-  
-
 
 <div class="mx-auto flex max-w-screen-xl">
   
@@ -913,7 +885,7 @@
     
   >Projects
     </a></li>
-        <li class=""><a
+        <li class="open"><a
     class="hb-sidebar-custom-link
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
     href="/post/"
@@ -931,13 +903,46 @@
   >🎉 Easily create your own simple yet highly customizable blog
     </a>
               
-            </li><li class="flex flex-col "><a
+            </li><li class="flex flex-col open"><a
     class="hb-sidebar-custom-link
-      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+      sidebar-active-item bg-primary-100 font-semibold text-primary-800 dark:bg-primary-300 dark:text-primary-900"
     href="/post/post1/"
     
   >GIT 🧠
     </a>
+  
+    <ul class="hb-sidebar-mobile-toc"><li>
+              <a
+                href="#git"
+                class="hb-docs-link"
+              >Git</a>
+            </li>
+          <li>
+              <a
+                href="#history"
+                class="hb-docs-link"
+              >History</a>
+            </li>
+          <li>
+              <a
+                href="#highlighting"
+                class="hb-docs-link"
+              >Highlighting</a>
+            </li>
+          <li>
+              <a
+                href="#callouts"
+                class="hb-docs-link"
+              >Callouts</a>
+            </li>
+          <li>
+              <a
+                href="#did-you-find-this-page-helpful-consider-sharing-it-"
+                class="hb-docs-link"
+              >Did you find this page helpful? Consider sharing it 🙌</a>
+            </li>
+          </ul>
+  
               
             </li><li class="flex flex-col "><a
     class="hb-sidebar-custom-link
@@ -1052,7 +1057,7 @@
               
             </li></ul>
       </div></li>
-        <li class="open"><a
+        <li class=""><a
     class="hb-sidebar-custom-link
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
     href="/publication/"
@@ -1070,14 +1075,13 @@
   >An example preprint / working paper
     </a>
               
-            </li><li class="flex flex-col open"><a
+            </li><li class="flex flex-col "><a
     class="hb-sidebar-custom-link
-      sidebar-active-item bg-primary-100 font-semibold text-primary-800 dark:bg-primary-300 dark:text-primary-900"
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
     href="/publication/journal-article/"
     
   >An example journal article
     </a>
-  
               
             </li><li class="flex flex-col "><a
     class="hb-sidebar-custom-link
@@ -1109,7 +1113,22 @@
 
 
 
-  <div class="hb-scrollbar text-sm [hyphens:auto] sticky top-16 overflow-y-auto pr-4 pt-6 max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] -mr-4 rtl:-ml-4">
+  <div class="hb-scrollbar text-sm [hyphens:auto] sticky top-16 overflow-y-auto pr-4 pt-6 max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] -mr-4 rtl:-ml-4"><p class="mb-4 font-semibold tracking-tight">On this page</p><ul>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#git">Git</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#history">History</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#highlighting">Highlighting</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#callouts">Callouts</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#did-you-find-this-page-helpful-consider-sharing-it-">Did you find this page helpful? Consider sharing it 🙌</a>
+      </li></ul>
 
   
   
@@ -1138,10 +1157,10 @@
 
       
 
-      <h1 class="mt-2 text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-100">An example journal article</h1>
+      <h1 class="mt-2 text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-100">GIT 🧠</h1>
 
       <div class="mt-4 mb-16">
-      <div class="text-gray-500 dark:text-gray-300 text-sm flex items-center flex-wrap gap-y-2"><span class="mr-1">Sep 1, 2015</span><span class="mx-1">·</span>
+      <div class="text-gray-500 dark:text-gray-300 text-sm flex items-center flex-wrap gap-y-2"><span class="mr-1">Oct 26, 2023</span><span class="mx-1">·</span>
         
           
           
@@ -1154,19 +1173,11 @@
           </div>
           
         
-          
-          <span class="mr-1">,</span>
-          <div class="group inline-flex items-center text-current gap-x-1.5 mx-1">
-            
-            <div >Robert Ford</div>
-          </div>
-          
-        
 
         
         <span class="mx-1">·</span>
         <span class="mx-1">
-          1 min read
+          3 min read
         </span>
         
         </div>
@@ -1177,60 +1188,6 @@
 
 
 
-<div class="">
-  
-  
-
-
-
-
-
-
-
-
-  
-    
-  
-
-
-
-<a class="hb-attachment-link hb-attachment-large" href="http://arxiv.org/pdf/1512.04133v1" target="_blank" rel="noopener">
-  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9"/></svg>
-  PDF
-</a>
-
-
-
-<a class="hb-attachment-link hb-attachment-large" href="/publication/journal-article/cite.bib" target="_blank" data-filename="/publication/journal-article/cite.bib">
-  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"/></svg>
-  Cite
-</a>
-
-
-  
-  
-    
-  
-<a class="hb-attachment-link hb-attachment-large" href="https://github.com/HugoBlox/hugo-blox-builder" target="_blank" rel="noopener">
-  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"/></svg>
-  Code
-</a>
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-</div>
-
 
         </div>
       </div>
@@ -1253,9 +1210,9 @@
       
       
       
-      <div class="article-header article-container featured-image-wrapper mt-4 mb-16" style="max-width: 720px; max-height: 436px;">
+      <div class="article-header article-container featured-image-wrapper mt-4 mb-16" style="max-width: 348px; max-height: 145px;">
         <div style="position: relative">
-          <img src="/publication/journal-article/featured_hu3d03a01dcc18bc5be0e67db3d8d209a6_214168_9f5ed01b17c83d687e2e557d1edd0a6c.webp" width="720" height="436" alt="" class="featured-image">
+          <img src="/post/post1/featured_hud52c993e9c42ee65ccaec8370ff4305c_4426_33cc383ab3cbc4b65f5978b40059de57.webp" width="348" height="145" alt="" class="featured-image">
           <span class="article-header-caption">Image credit:</span>
         </div>
       </div>
@@ -1263,58 +1220,124 @@
 
       
       
-        <div class="max-w-prose grid grid-cols-1 md:grid-cols-[200px_auto] gap-4 my-6">
-
-        
-          <div class="font-bold text-2xl">Abstract</div>
-          <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.</div>
-        
-
-        
-        
-          <div class="font-bold text-2xl">Type</div>
-          <div>
-            <a href="/publication_types/article-journal/">
-            Journal article
-            </a>
-          </div>
-        
-
-        
-          <div class="font-bold text-2xl">Publication</div>
-          <div><em>Journal of Source Themes, 1</em>(1)</div>
-        
-
-        
-
-        
-
-        
-
-      </div>
-      
 
       <div class="prose prose-slate lg:prose-xl dark:prose-invert">
-        <div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
-<span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-  <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
-</span>
-  <span class="dark:text-neutral-300">Click the <em>Cite</em> button above to demo the feature to enable visitors to import publication metadata into their reference management software.</span>
+        <p>Create a personal knowledge base and share your knowledge with your peers.</p>
+<p>Hugo Blox web framework empowers you with one of the most flexible note-taking capabilities out there.</p>
+<p>Create a powerful knowledge base that works on top of a local folder of plain text Markdown files.</p>
+<p>Use it as your second brain, either publicly sharing your knowledge with your peers via your website, or via a private GitHub repository and password-protected site just for yourself.</p>
+<h2 id="git">Git</h2>
+<p>Git (произносится «гит») — распределённая система управления версиями. Проект был создан Линусом Торвальдсом для управления разработкой ядра Linux, первая версия выпущена 7 апреля 2005 года; координатор — Дзюн Хамано.</p>
+<p>Среди проектов, использующих Git, — ядро Linux, Swift, Android, Drupal, Cairo, GNU Core Utilities, Mesa, Wine, Chromium, Compiz Fusion, FlightGear, jQuery, PHP, NASM, MediaWiki, DokuWiki, Qt, ряд дистрибутивов Linux.
+Hugo Blox supports a Markdown extension for mindmaps.</p>
+<p>With this open format, can even edit your mindmaps in other popular tools such as Obsidian.</p>
+<p>Simply insert a Markdown code block labelled as <code>markmap</code> and optionally set the height of the mindmap as shown in the example below.</p>
+<p>Mindmaps can be created by simply writing the items as a Markdown list within the <code>markmap</code> code block, indenting each item to create as many sub-levels as you need:</p>
+<h2 id="history">History</h2>
+<p>Разработка ядра Linux велась на проприетарной системе BitKeeper[9], которую автор — Ларри Маквой, сам разработчик Linux — предоставил проекту по бесплатной лицензии. Разработчики, высококлассные программисты, написали несколько утилит, и для одной Эндрю Триджелл произвёл реверс-инжиниринг формата передачи данных BitKeeper. В ответ Маквой обвинил разработчиков в нарушении соглашения и отозвал лицензию, и Торвальдс взялся за новую систему: ни одна из открытых систем не позволяла тысячам программистов кооперировать свои усилия (тот же конфликт привёл к написанию Mercurial). Идеология была проста: взять подход CVS и перевернуть с ног на голову[10], и заодно добавить надёжности.</p>
+<p>Начальная разработка велась меньше чем неделю: 3 апреля 2005 года разработка началась, и уже 7 апреля код Git управлялся неготовой системой. 16 июня Linux был переведён на Git, а 25 июля Торвальдс отказался от обязанностей ведущего разработчика.</p>
+<div class="highlight">
+<pre class="chroma">
+<code>
+```markmap {height="200px"}
+- Hugo Modules
+  - Hugo Blox
+  - blox-plugins-netlify
+  - blox-plugins-netlify-cms
+  - blox-plugins-reveal
+```
+</code>
+</pre>
 </div>
+<p>renders as</p>
+<div class="markmap" style="height: 200px;">
+
+<pre>- Hugo Modules
+  - Hugo Blox
+  - blox-plugins-netlify
+  - blox-plugins-netlify-cms
+  - blox-plugins-reveal</pre>
+</div>
+
+<p>Anh here&rsquo;s a more advanced mindmap with formatting, code blocks, and math:</p>
+<div class="highlight">
+<pre class="chroma">
+<code>
+```markmap
+- Mindmaps
+  - Links
+    - [Hugo Blox Docs](https://docs.hugoblox.com/)
+    - [Discord Community](https://discord.gg/z8wNYzb)
+    - [GitHub](https://github.com/HugoBlox/hugo-blox-builder)
+  - Features
+    - Markdown formatting
+    - **inline** ~~text~~ *styles*
+    - multiline
+      text
+    - `inline code`
+    -
+      ```js
+      console.log('hello');
+      console.log('code block');
+      ```
+    - Math: $x = {-b \pm \sqrt{b^2-4ac} \over 2a}$
+```
+</code>
+</pre>
+</div>
+<p>renders as</p>
+<div class="markmap" style="height: 500px;">
+
+<pre>- Mindmaps
+  - Links
+    - [Hugo Blox Docs](https://docs.hugoblox.com/)
+    - [Discord Community](https://discord.gg/z8wNYzb)
+    - [GitHub](https://github.com/HugoBlox/hugo-blox-builder)
+  - Features
+    - Markdown formatting
+    - **inline** ~~text~~ *styles*
+    - multiline
+      text
+    - `inline code`
+    -
+      ```js
+      console.log('hello');
+      console.log('code block');
+      ```
+    - Math: $x = {-b \pm \sqrt{b^2-4ac} \over 2a}$</pre>
+</div>
+
+<h2 id="highlighting">Highlighting</h2>
+<p><mark>Highlight</mark> important text with <code>mark</code>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">mark</span><span class="p">&gt;</span>Highlighted text<span class="p">&lt;/</span><span class="nt">mark</span><span class="p">&gt;</span>
+</span></span></code></pre></div><h2 id="callouts">Callouts</h2>
+<p>Use <a href="https://docs.hugoblox.com/reference/markdown/#callouts" target="_blank" rel="noopener">callouts</a> (aka <em>asides</em>, <em>hints</em>, or <em>alerts</em>) to draw attention to notes, tips, and warnings.</p>
+<p>By wrapping a paragraph in <code>{{% callout note %}} ... {{% /callout %}}</code>, it will render as an aside.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">{{% callout note %}}
+</span></span><span class="line"><span class="cl">A Markdown aside is useful for displaying notices, hints, or definitions to your readers.
+</span></span><span class="line"><span class="cl">{{% /callout %}}
+</span></span></code></pre></div><p>renders as</p>
 <div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
 <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
   <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
 </span>
-  <span class="dark:text-neutral-300">Create your slides in Markdown - click the <em>Slides</em> button to check out the example.</span>
+  <span class="dark:text-neutral-300">A Markdown aside is useful for displaying notices, hints, or definitions to your readers.</span>
 </div>
-<p>Add the publication&rsquo;s <strong>full text</strong> or <strong>supplementary notes</strong> here. You can use rich formatting such as including <a href="https://docs.hugoblox.com/content/writing-markdown-latex/" target="_blank" rel="noopener">code, math, and images</a>.</p>
+<p>Or use the <code>warning</code> callout type so your readers don&rsquo;t miss critical details:</p>
+<div class="flex px-4 py-3 mb-6 rounded-md bg-yellow-100 dark:bg-yellow-900">
+<span class="pr-3 pt-1 text-red-400">
+  <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0zM12 15.75h.007v.008H12z"/></svg>
+</span>
+  <span class="dark:text-neutral-300">A Markdown aside is useful for displaying notices, hints, or definitions to your readers.</span>
+</div>
+<h2 id="did-you-find-this-page-helpful-consider-sharing-it-">Did you find this page helpful? Consider sharing it 🙌</h2>
 
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2015-09-01T00:00:00.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2023-10-26T00:00:00.000Z">
     <span>Last updated on</span>
-    Sep 1, 2015</time>
+    Oct 26, 2023</time>
 
       <div class="container mx-auto prose prose-slate lg:prose-xl dark:prose-invert mt-5">
         
@@ -1326,7 +1349,9 @@
 
 <div class="flex justify-center">
   
-  <a class="no-underline bg-primary-100 hover:bg-primary-300 text-primary-800 text-xs font-medium mr-2 px-2.5 py-0.5 lg:px-5 lg:py-2 rounded dark:bg-primary-900 dark:hover:bg-primary-700 dark:text-primary-300" href="/tags/source-themes/">Source Themes</a>
+  <a class="no-underline bg-primary-100 hover:bg-primary-300 text-primary-800 text-xs font-medium mr-2 px-2.5 py-0.5 lg:px-5 lg:py-2 rounded dark:bg-primary-900 dark:hover:bg-primary-700 dark:text-primary-300" href="/tags/second-brain/">Second Brain</a>
+  
+  <a class="no-underline bg-primary-100 hover:bg-primary-300 text-primary-800 text-xs font-medium mr-2 px-2.5 py-0.5 lg:px-5 lg:py-2 rounded dark:bg-primary-900 dark:hover:bg-primary-700 dark:text-primary-300" href="/tags/markdown/">Markdown</a>
   
 </div>
 
@@ -1344,7 +1369,7 @@
   <a
     target="_blank" rel="noopener"
     class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fexample.com%2Fpublication%2Fjournal-article%2F&amp;text=An&#43;example&#43;journal&#43;article"
+    href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fexample.com%2Fpost%2Fpost1%2F&amp;text=GIT&#43;%F0%9F%A7%A0"
     title="X"
     aria-label="X"
     id="share-link-x"
@@ -1362,7 +1387,7 @@
   <a
     target="_blank" rel="noopener"
     class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fexample.com%2Fpublication%2Fjournal-article%2F&amp;t=An&#43;example&#43;journal&#43;article"
+    href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fexample.com%2Fpost%2Fpost1%2F&amp;t=GIT&#43;%F0%9F%A7%A0"
     title="Facebook"
     aria-label="Facebook"
     id="share-link-facebook"
@@ -1382,7 +1407,7 @@
   <a
     target="_blank" rel="noopener"
     class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="mailto:?subject=An%20example%20journal%20article&amp;body=https%3A%2F%2Fexample.com%2Fpublication%2Fjournal-article%2F"
+    href="mailto:?subject=GIT%20%F0%9F%A7%A0&amp;body=https%3A%2F%2Fexample.com%2Fpost%2Fpost1%2F"
     title="Email"
     aria-label="Email"
     id="share-link-email"
@@ -1400,7 +1425,7 @@
   <a
     target="_blank" rel="noopener"
     class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fexample.com%2Fpublication%2Fjournal-article%2F&amp;title=An&#43;example&#43;journal&#43;article"
+    href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fexample.com%2Fpost%2Fpost1%2F&amp;title=GIT&#43;%F0%9F%A7%A0"
     title="LinkedIn"
     aria-label="LinkedIn"
     id="share-link-linkedin"
@@ -1418,7 +1443,7 @@
   <a
     target="_blank" rel="noopener"
     class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="whatsapp://send?text=An&#43;example&#43;journal&#43;article%20https%3A%2F%2Fexample.com%2Fpublication%2Fjournal-article%2F"
+    href="whatsapp://send?text=GIT&#43;%F0%9F%A7%A0%20https%3A%2F%2Fexample.com%2Fpost%2Fpost1%2F"
     title="WhatsApp"
     aria-label="WhatsApp"
     id="share-link-whatsapp"
@@ -1595,12 +1620,6 @@
 
 
   
-    
-
-
-
-
-  
 
 
 
@@ -1618,17 +1637,17 @@
   <div class="flex flex-col md:flex-row flex-nowrap justify-between gap-5 pt-2">
     <div class="">
       
-        <a class="group flex no-underline" href="/publication/preprint/">
+        <a class="group flex no-underline" href="/post/get-started/">
           <span
             class="mt-[-0.3rem] me-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
           ><span class="ltr:inline rtl:hidden">&larr;</span></span>
           <span class="flex flex-col">
             <span
               class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-            >An example preprint / working paper</span>
+            >🎉 Easily create your own simple yet highly customizable blog</span>
             <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
               
-                Apr 7, 2019
+                Oct 27, 2023
               
             </span>
           </span>
@@ -1637,15 +1656,15 @@
     </div>
     <div class="">
       
-        <a class="group flex text-right no-underline" href="/publication/conference-paper/">
+        <a class="group flex text-right no-underline" href="/post/post2/">
           <span class="flex flex-col">
             <span
               class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-            >An example conference paper</span
+            >PANDA</span
             >
             <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
               
-                Jul 1, 2013
+                Oct 26, 2023
               
             </span>
           </span>
